@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Kamalesh 💎</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #000814, #001d3d, #003566);
+    color: white;
+    overflow: hidden;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.page.active {
+    display: flex;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 1.8;
+    animation: slideDown 1.5s ease;
+}
+
+.arrow {
+    font-size: 28px;
+    cursor: pointer;
+    color: #00f5ff;
+    text-shadow: 0 0 10px #00f5ff,
+                 0 0 20px #00f5ff,
+                 0 0 40px #00f5ff;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page active">
+<div class="text">
+ELEII KAMALESH UH🩵💎🥺...<br>
+Love you as always raa thambeyyy🫂..
+</div>
+<div class="arrow" onclick="nextPage()">↓</div>
+</div>
+
+<div class="page">
+<div class="text">
+I am sorry for the mess I had done in your life🥺🫴..<br>
+manichuu😩 enakku eppovume nee thambi pullaiyaa kooda venummm ...<br>
+Love you as always nu oru naalum poiyaaa sonnathulla kamalesh uh promichhh😭..nambuuu
+</div>
+<div class="arrow" onclick="nextPage()">↓</div>
+</div>
+
+<div class="page">
+<div class="text">
+Un life la ellaarum yemaathitu poraanga nu nee sonnalla😮‍💨<br>
+naan yemaathuvum illa yemaathavum maatenn unna naan<br>
+unmaiyaave thambi nu dhaa nenachu pesurenn🥺🥺...
+</div>
+<div class="arrow" onclick="nextPage()">↓</div>
+</div>
+
+<div class="page">
+<div class="text">
+Elaarum fake aah ponappo neee dhaan ipdiiyum oru silar irupaanga nu kaatna<br>
+enakku ippovum soldren nee gem laa illa you are treasure...🩵💎..<br>
+I know I am not deserved for your paasam.. anaalum enakku nee venumaeee🫂..
+</div>
+<div class="arrow" onclick="nextPage()">↓</div>
+</div>
+
+<div class="page">
+<div class="text">
+I Don't know about ur love life raaa avunga epdi nu laa enakku theriyaathu<br>
+anaa unakku theriyum la avunga unakku deserved aah illaiyaa nu<br>
+so if she not deserved don't feel for her and move on thangame🫴✨️...<br>
+There is better life for you♾️
+</div>
+<div class="arrow" onclick="nextPage()">↓</div>
+</div>
+
+<div class="page">
+<div class="text">
+Thanks for coming into my life<br>
+🩵💎🫂♾️✨️💫🌚🕊
+</div>
+<div class="arrow" onclick="nextPage()">↓</div>
+</div>
+
+<div class="page">
+<div class="text">
+Kindly don't leave me daa even evlo perusaaa thappu pannaalum pleachhh🫴
+</div>
+</div>
+
+<script>
+let currentPage = 0;
+const pages = document.querySelectorAll(".page");
+
+function nextPage() {
+    pages[currentPage].classList.remove("active");
+    currentPage++;
+    if (currentPage < pages.length) {
+        pages[currentPage].classList.add("active");
+    }
+}
+</script>
+
+</body>
+</html>
+
